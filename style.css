@@ -4,3 +4,31 @@
     background: #fff;
     border-block: var(--kg-line);
 }
+
+.section-head { max-width: 38rem; margin-bottom: 2rem; }
+.section-head h2 { font-size: clamp(1.6rem, 4vw, 2.2rem); margin-bottom: 0.5rem; }
+.section-head p { margin: 0; color: var(--kg-muted); }
+
+.page-head { padding-block: 2rem 0.5rem; }
+.page-head h1 { font-size: clamp(2rem, 5vw, 3rem); }
+
+.breadcrumb {
+  --bs-breadcrumb-divider-color: var(--kg-muted);
+  --bs-breadcrumb-item-active-color: var(--kg-muted);
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.breadcrumb a { color: var(--kg-cobalt); }
+
+.chip {
+    display: inline-block;
+    padding: 0,15rem 0.7rem;
+    border: var(--kg-line);
+    border-radius: 999px;
+    background: var(--kg-sun);
+    color: var(--kg-ink);
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1.5;
+}

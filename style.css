@@ -99,4 +99,8 @@
 }
 .board-row .price { color: var(--kg-sun); font-weight: 700; }
 
+.game-mlbb   { --game: #2f6bff; --game-soft: #dfe8ff; --game-on: #ffffff; }
+.game-pubg   { --game: #f5a524; --game-soft: #ffefcf; --game-on: #12162b; }
+.game-roblox { --game: #e5243b; --game-soft: #ffdfe3; --game-on: #ffffff; }
+
 

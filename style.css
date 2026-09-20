@@ -1,1 +1,6 @@
 .section { padding-block: clamp(2.5rem, 6vw, 4.5rem); }
+
+.section-band {
+    background: #fff;
+    border-block: var(--kg-line);
+}

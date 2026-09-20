@@ -34,3 +34,15 @@
 }
 
 .breadcrumb a { color: var(--kg-cobalt); }
+
+.chip {
+    display: inline-block;
+    padding: 0.15rem 0.7rem;
+    border: var(--kg-line);
+    border-radius: 999px;
+    background: var(--kg-sun);
+    color: var(--kg-ink);
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1.5;
+}

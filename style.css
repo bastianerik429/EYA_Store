@@ -207,6 +207,24 @@
 .voucher-price { margin: 0; font-family: var(--kg-font-head); font-size: 1.4rem; font-weight: 800; }
 .voucher-bottom .btn-kg { margin-top: auto; }
 
+.feature { display: flex; align-items: flex-start; gap: 1rem; }
+.feature-icon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  background: var(--kg-sun);
+  border: var(--kg-line);
+  border-radius: 12px;
+  font-size: 1.4rem;
+}
+.feature-icon.is-blue  { background: #cfd9ff; }
+.feature-icon.is-mint  { background: #c3f3e2; }
+.feature-icon.is-coral { background: #ffd6d2; }
+.feature h3 { margin-bottom: 0.25rem; font-size: 1.15rem; }
+.feature p { margin: 0; color: var(--kg-muted); }
+
 
 
 

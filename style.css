@@ -291,4 +291,15 @@
 }
 .accordion-button { font-family: var(--kg-font-head); font-weight: 700; }
 
+.cta-band {
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  background: var(--kg-cobalt);
+  color: #fff;
+  border: var(--kg-line);
+  border-radius: var(--kg-radius);
+  box-shadow: 6px 6px 0 var(--kg-ink);
+}
+.cta-band h2 { margin-bottom: 0.5rem; font-size: clamp(1.5rem, 4vw, 2rem); color: #fff; }
+.cta-band p { margin: 0; color: #e2e8ff; }
+
 

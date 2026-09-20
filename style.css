@@ -92,4 +92,11 @@
   font-variant-numeric: tabular-nums;
 }
 
+.board-row .leader {
+  flex: 1;
+  min-width: 1rem;
+  border-bottom: 2px dotted rgba(255, 255, 255, 0.35);
+}
+.board-row .price { color: var(--kg-sun); font-weight: 700; }
+
 

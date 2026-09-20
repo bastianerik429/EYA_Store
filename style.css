@@ -250,7 +250,16 @@
 .step-list h3 { margin: 0 0 0.15rem; font-size: 1.1rem; }
 .step-list p { margin: 0; color: var(--kg-muted); }
 
-
+.info-panel {
+  height: 100%;
+  padding: 1.25rem 1.5rem;
+  background: #fff;
+  border: var(--kg-line);
+  border-radius: var(--kg-radius);
+}
+.info-panel h2 { margin-bottom: 0.75rem; font-size: 1.25rem; }
+.info-panel ol,
+.info-panel ul { display: grid; gap: 0.5rem; padding-left: 1.25rem; margin: 0; }
 
 
 

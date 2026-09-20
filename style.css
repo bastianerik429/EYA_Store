@@ -133,4 +133,27 @@
 .game-tile-body .tile-price { margin-top: 0.5rem; font-weight: 700; color: var(--kg-ink); }
 .tile-cta { margin-top: auto; padding-top: 0.75rem; font-weight: 700; color: var(--kg-cobalt); }
 
+.game-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding-block: 1.5rem 2.5rem;
+}
+.game-hero-cover {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 7rem;
+  height: 7rem;
+  background: var(--game);
+  color: var(--game-on);
+  border: var(--kg-line);
+  border-radius: var(--kg-radius);
+  box-shadow: var(--kg-shadow);
+  font-size: 3.5rem;
+}
+.game-hero h1 { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 0.5rem; }
+.game-hero p { max-width: 40rem; margin: 0; color: var(--kg-muted); }
+
 

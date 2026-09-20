@@ -49,3 +49,21 @@
 .chip-mint  { background: #c3f3e2; }
 .chip-white { background: #fff; }
 .chip-list { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0; margin: 1rem 0 0; list-style: none; }
+
+.hero { padding-block: clamp(2.5rem, 7vw, 5rem); }
+.hero h1 {
+  margin-bottom: 1rem;
+  font-size: clamp(2.3rem, 7vw, 4rem);
+}
+.hero-lead {
+  max-width: 34rem;
+  margin-bottom: 1.75rem;
+  font-size: 1.1rem;
+  color: var(--kg-muted);
+}
+.hero-actions { display: flex; flex-wrap: wrap; gap: 0.9rem; }
+
+.hero-points { padding: 0; margin: 2rem 0 0; list-style: none; display: grid; gap: 0.5rem; }
+.hero-points li { display: flex; align-items: center; gap: 0.6rem; font-weight: 600; }
+.hero-points i { color: var(--kg-mint); font-size: 1.15rem; }
+

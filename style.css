@@ -67,3 +67,29 @@
 .hero-points li { display: flex; align-items: center; gap: 0.6rem; font-weight: 600; }
 .hero-points i { color: var(--kg-mint); font-size: 1.15rem; }
 
+.board {
+  padding: 1.25rem 1.25rem 1rem;
+  background: var(--kg-ink);
+  color: #fff;
+  border: var(--kg-line);
+  border-radius: var(--kg-radius);
+  box-shadow: 6px 6px 0 var(--kg-sun);
+}
+.board-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.board-title h2 { margin: 0; font-size: 1.4rem; color: var(--kg-sun); }
+.board-group { margin-top: 1.1rem; }
+.board-group h3 { margin-bottom: 0.3rem; font-size: 1rem; color: #fff; }
+.board-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.15rem 0;
+  font-variant-numeric: tabular-nums;
+}
+
+

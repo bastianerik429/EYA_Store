@@ -261,6 +261,25 @@
 .info-panel ol,
 .info-panel ul { display: grid; gap: 0.5rem; padding-left: 1.25rem; margin: 0; }
 
+.table-wrap {
+  background: #fff;
+  border: var(--kg-line);
+  border-radius: var(--kg-radius);
+}
+.table-kg { --bs-table-bg: transparent; margin: 0; }
+.table-kg th,
+.table-kg td { padding: 0.8rem 1rem; vertical-align: middle; white-space: nowrap; }
+.table-kg thead th {
+  background: var(--kg-ink);
+  color: #fff;
+  font-family: var(--kg-font-head);
+  border-color: var(--kg-ink);
+}
+.table-kg thead th:first-child { border-top-left-radius: 11px; }
+.table-kg thead th:last-child  { border-top-right-radius: 11px; }
+.table-kg tbody td { border-color: #d8ddf0; }
+.table-kg tbody tr:last-child td { border-bottom: 0; }
+
 
 
 

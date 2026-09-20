@@ -1,0 +1,27 @@
+.flow-anchor {
+  display: block;
+  height: 0;
+  scroll-margin-top: 5.5rem;
+}
+
+#mlbb-86:target ~ .row .pick-mlbb-86,
+#mlbb-172:target ~ .row .pick-mlbb-172,
+#mlbb-344:target ~ .row .pick-mlbb-344
+{ display: block;}
+
+.stepper {
+  display: flex;
+  padding: 0;
+  margin: 0 0 1.75rem;
+  list-style: none;
+}
+
+.stepper li::before {
+  content: "";
+  position: absolute;
+  top: 1.1rem;
+  left: -50%;
+  width: 100%;
+  height: 2px;
+  background: #b9bfd9;
+}

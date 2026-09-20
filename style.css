@@ -103,4 +103,34 @@
 .game-pubg   { --game: #f5a524; --game-soft: #ffefcf; --game-on: #12162b; }
 .game-roblox { --game: #e5243b; --game-soft: #ffdfe3; --game-on: #ffffff; }
 
+.game-tile {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  background: #fff;
+  color: var(--kg-ink);
+  border: var(--kg-line);
+  border-radius: var(--kg-radius);
+  text-decoration: none;
+}
+.game-tile:hover {
+  color: var(--kg-ink);
+  transform: translate(-2px, -2px);
+  box-shadow: var(--kg-shadow);
+}
+.game-tile-cover {
+  display: grid;
+  place-items: center;
+  padding: 1.75rem 1rem;
+  background: var(--game);
+  border-bottom: var(--kg-line);
+}
+.game-tile-cover i { font-size: 3.5rem; line-height: 1; color: var(--game-on); }
+.game-tile-body { display: flex; flex: 1; flex-direction: column; gap: 0.25rem; padding: 1.1rem 1.25rem 1.25rem; }
+.game-tile-body h3 { margin: 0; font-size: 1.35rem; }
+.game-tile-body p { margin: 0; color: var(--kg-muted); }
+.game-tile-body .tile-price { margin-top: 0.5rem; font-weight: 700; color: var(--kg-ink); }
+.tile-cta { margin-top: auto; padding-top: 0.75rem; font-weight: 700; color: var(--kg-cobalt); }
+
 

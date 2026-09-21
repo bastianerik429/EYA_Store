@@ -48,6 +48,21 @@
                       </div>
                 </div>
               </fieldset>
+              <fieldset>
+                <legend>Kontak untuk bukti pesanan</legend>
+                <div class="row g-3">
+                  <div class="col-12">
+                    <label class="form-label" for="email">Email</label>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="nama@email.com" autocomplete="email" required>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="wa">Nomor WhatsApp</label>
+                    <input class="form-control" type="tel" id="wa" name="wa" placeholder="081234567890"
+                           inputmode="tel" pattern="08[0-9]{8,12}" autocomplete="tel" required>
+                    <div class="form-text">Diawali 08, contoh: 081234567890</div>
+                  </div>
+                </div>
+              </fieldset>
 </main>
 </body>
 </html>

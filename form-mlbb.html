@@ -27,6 +27,27 @@
           <li class=""><span class="dot">3</span><span class="lbl">Bayar</span></li>
           <li class=""><span class="dot">4</span><span class="lbl">Selesai</span></li>
         </ol>
+        <div class="row g-4">
+          <div class="col-lg-7 order-2 order-lg-1">
+            <form class="form-card" id="form-topup" action="pembayaran.html" method="get">
+              <input type="hidden" name="game" value="mlbb">
+              <fieldset>
+                <legend>Data akun game</legend>
+                <div class="row g-3">
+                      <div class="col-sm-7">
+                        <label class="form-label" for="user_id">User ID</label>
+                        <input class="form-control" type="text" id="user_id" name="user_id" placeholder="12345678"
+                               inputmode="numeric" pattern="[0-9]{6,12}" autocomplete="off" required>
+                        <div class="form-text">Angka 6–12 digit</div>
+                      </div>
+                      <div class="col-sm-5">
+                        <label class="form-label" for="zone_id">Zone ID</label>
+                        <input class="form-control" type="text" id="zone_id" name="zone_id" placeholder="2345"
+                               inputmode="numeric" pattern="[0-9]{3,5}" autocomplete="off" required>
+                        <div class="form-text">Angka 3–5 digit</div>
+                      </div>
+                </div>
+              </fieldset>
 </main>
 </body>
 </html>

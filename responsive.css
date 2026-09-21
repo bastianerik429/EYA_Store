@@ -1,0 +1,46 @@
+@media (max-width: 575.98px) {
+  .hero-actions .btn-kg,
+  .hero-actions .btn-kg-ghost { width: 100%; }
+
+  .stepper li { font-size: 0.7rem; }
+  .stepper li::before { top: 1rem; }
+  .stepper .dot { width: 2rem; height: 2rem; }
+
+  .kg-navbar .btn-kg-sm { width: 100%; }
+
+  .kg-footer { text-align: left; }
+  .board { box-shadow: 4px 4px 0 var(--kg-sun); }
+  .cta-band .btn-kg-sun { width: 100%; margin-top: 1rem; }
+}
+
+@media (min-width: 576px) {
+  .game-hero { flex-direction: row; align-items: center; }
+  .game-hero-cover { width: 8.5rem; height: 8.5rem; font-size: 4rem; }
+  .stepper li { font-size: 0.9rem; }
+  .pay-grid { grid-template-columns: repeat(2, 1fr); }
+  .step-list--row { grid-template-columns: repeat(2, 1fr); }
+  .form-card, .order-card { padding: 1.75rem; }
+}
+
+@media (min-width: 768px) {
+  .board { padding: 1.5rem 1.75rem 1.25rem; }
+  .voucher-amount { font-size: 3rem; }
+  .info-panel { padding: 1.5rem 1.75rem; }
+  .cta-band { display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+  .cta-band .btn-kg-sun { flex: none; }
+}
+
+@media (min-width: 992px) {
+  .order-card.is-sticky { position: sticky; top: 5.5rem; }
+
+  .step-list--row { grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+  .step-list--row li { flex-direction: column; gap: 0.75rem; }
+
+  .kg-navbar .btn-kg-sm { margin-left: 0.75rem; }
+  .game-tile-cover { padding-block: 2.25rem; }
+}
+
+@media (min-width: 1200px) {
+  .hero h1 { font-size: 4.4rem; }
+  .section { padding-block: 5rem; }
+}

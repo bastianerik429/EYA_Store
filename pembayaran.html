@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pilih metode pembayaran dan selesaikan top up di KiosGame.">
+  <title>Pembayaran | EYA Store</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+
+  <main id="konten">
+    <div class="container py-4 py-lg-5">
+      <div class="flow">
+        <span id="mlbb-86" class="flow-anchor"></span>
+        <span id="mlbb-172" class="flow-anchor"></span>
+        <span id="mlbb-344" class="flow-anchor"></span>
+        <span id="pubg-60" class="flow-anchor"></span>
+        <span id="pubg-325" class="flow-anchor"></span>
+        <span id="pubg-660" class="flow-anchor"></span>
+        <span id="roblox-80" class="flow-anchor"></span>
+        <span id="roblox-400" class="flow-anchor"></span>
+        <span id="roblox-800" class="flow-anchor"></span>
+
+        <ol class="stepper" aria-label="Tahapan top up">
+          <li class="is-done"><span class="dot"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span class="lbl">Pilih paket</span></li>
+          <li class="is-done"><span class="dot"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span class="lbl">Isi data</span></li>
+          <li class="is-active" aria-current="step"><span class="dot">3</span><span class="lbl">Bayar</span></li>
+          <li class=""><span class="dot">4</span><span class="lbl">Selesai</span></li>
+        </ol>
+        <h1 class="h2 mb-4">Pembayaran</h1>
+
+        <div class="row g-4">
+          <div class="col-lg-7 order-2 order-lg-1">
+            <form class="form-card" id="form-bayar" action="sukses.html" method="get">
+              <fieldset>
+                <legend>Pilih metode pembayaran</legend>
+                <div class="pay-grid">
+                <div>
+                  <input class="btn-check" type="radio" name="metode" id="m-qris" value="qris" required>
+                  <label class="pay-option" for="m-qris">
+                    <i class="bi bi-qr-code" aria-hidden="true"></i>
+                    <span><strong>QRIS</strong><small>Semua e-wallet dan m-banking</small></span>
+                  </label>
+                </div>
+                <div>
+                  <input class="btn-check" type="radio" name="metode" id="m-gopay" value="gopay" required>
+                  <label class="pay-option" for="m-gopay">
+                    <i class="bi bi-wallet2" aria-hidden="true"></i>
+                    <span><strong>GoPay</strong><small>Bayar lewat aplikasi Gojek</small></span>
+                  </label>
+                </div>
+                <div>
+                  <input class="btn-check" type="radio" name="metode" id="m-dana" value="dana" required>
+                  <label class="pay-option" for="m-dana">
+                    <i class="bi bi-phone" aria-hidden="true"></i>
+                    <span><strong>DANA</strong><small>Bayar lewat aplikasi DANA</small></span>
+                  </label>
+                </div>
+                <div>
+                  <input class="btn-check" type="radio" name="metode" id="m-ovo" value="ovo" required>
+                  <label class="pay-option" for="m-ovo">
+                    <i class="bi bi-wallet" aria-hidden="true"></i>
+                    <span><strong>OVO</strong><small>Bayar lewat aplikasi OVO</small></span>
+                  </label>
+                </div>
+                <div>
+                  <input class="btn-check" type="radio" name="metode" id="m-va" value="va" required>
+                  <label class="pay-option" for="m-va">
+                    <i class="bi bi-bank" aria-hidden="true"></i>
+                    <span><strong>Virtual Account</strong><small>BCA, BNI, BRI, Mandiri</small></span>
+                  </label>
+                </div>
+                <div>
+                  <input class="btn-check" type="radio" name="metode" id="m-minimarket" value="minimarket" required>
+                  <label class="pay-option" for="m-minimarket">
+                    <i class="bi bi-shop" aria-hidden="true"></i>
+                    <span><strong>Minimarket</strong><small>Indomaret dan Alfamart</small></span>
+                  </label>
+                </div>
+                </div>
+              </fieldset>
+
+                <div class="pick pick-mlbb-86">
+                  <button class="btn-kg w-100" type="submit" formaction="sukses.html#mlbb-86">Bayar Rp 22.000</button>
+                </div>
+                <div class="pick pick-mlbb-172">
+                  <button class="btn-kg w-100" type="submit" formaction="sukses.html#mlbb-172">Bayar Rp 43.000</button>
+                </div>
+                <div class="pick pick-mlbb-344">
+                  <button class="btn-kg w-100" type="submit" formaction="sukses.html#mlbb-344">Bayar Rp 85.000</button>
+                </div>
+                <div class="pick pick-pubg-60">
+                  <button class="btn-kg w-100" type="submit" formaction="sukses.html#pubg-60">Bayar Rp 16.000</button>
+                </div>
+                <div class="pick pick-pubg-325">
+                  <button class="btn-kg w-100" type="submit" formaction="sukses.html#pubg-325">Bayar Rp 76.000</button>
+                </div>
+                <div class="pick pick-pubg-660">
+                  <button class="btn-kg w-100" type="submit" formaction="sukses.html#pubg-660">Bayar Rp 151.000</button>
+                </div>
+                <div class="pick pick-roblox-80">
+                  <button class="btn-kg w-100" type="submit" formaction="sukses.html#roblox-80">Bayar Rp 17.000</button>
+                </div>
+                <div class="pick pick-roblox-400">
+                  <button class="btn-kg w-100" type="submit" formaction="sukses.html#roblox-400">Bayar Rp 80.000</button>
+                </div>
+                <div class="pick pick-roblox-800">
+                  <button class="btn-kg w-100" type="submit" formaction="sukses.html#roblox-800">Bayar Rp 156.000</button>
+                </div>
+              <div class="pick-default">
+                <button class="btn-kg w-100" type="button" disabled>Belum ada pesanan</button>
+              </div>
+              <p class="text-muted small text-center mt-3 mb-0">Ini simulasi. Tidak ada uang yang dipindahkan.</p>
+            </form>
+          </div>
+
+          <div class="col-lg-5 order-1 order-lg-2">
+            <aside class="order-card is-sticky" aria-label="Ringkasan pembayaran">
+              <h2>Ringkasan pembayaran</h2>
+              <div class="pick pick-mlbb-86">
+                <div class="order-game game-mlbb">
+                  <span class="order-icon"><i class="bi bi-gem" aria-hidden="true"></i></span>
+                  <div><strong>Mobile Legends</strong><small>86 Diamond</small></div>
+                </div>
+                <dl class="order-lines">
+                  <div><dt>Harga</dt><dd>Rp 21.000</dd></div>
+                  <div><dt>Biaya layanan</dt><dd>Rp 1.000</dd></div>
+                  <div class="is-total"><dt>Total bayar</dt><dd>Rp 22.000</dd></div>
+                </dl>
+              </div>
+              <div class="pick pick-mlbb-172">
+                <div class="order-game game-mlbb">
+                  <span class="order-icon"><i class="bi bi-gem" aria-hidden="true"></i></span>
+                  <div><strong>Mobile Legends</strong><small>172 Diamond</small></div>
+                </div>
+                <dl class="order-lines">
+                  <div><dt>Harga</dt><dd>Rp 42.000</dd></div>
+                  <div><dt>Biaya layanan</dt><dd>Rp 1.000</dd></div>
+                  <div class="is-total"><dt>Total bayar</dt><dd>Rp 43.000</dd></div>
+                </dl>
+              </div>
+              <div class="pick pick-mlbb-344">
+                <div class="order-game game-mlbb">
+                  <span class="order-icon"><i class="bi bi-gem" aria-hidden="true"></i></span>
+                  <div><strong>Mobile Legends</strong><small>344 Diamond</small></div>
+                </div>
+                <dl class="order-lines">
+                  <div><dt>Harga</dt><dd>Rp 84.000</dd></div>
+                  <div><dt>Biaya layanan</dt><dd>Rp 1.000</dd></div>
+                  <div class="is-total"><dt>Total bayar</dt><dd>Rp 85.000</dd></div>
+                </dl>
+              </div>
+              <div class="pick pick-pubg-60">
+                <div class="order-game game-pubg">
+                  <span class="order-icon"><i class="bi bi-crosshair" aria-hidden="true"></i></span>
+                  <div><strong>PUBG Mobile</strong><small>60 UC</small></div>
+                </div>
+                <dl class="order-lines">
+                  <div><dt>Harga</dt><dd>Rp 15.000</dd></div>
+                  <div><dt>Biaya layanan</dt><dd>Rp 1.000</dd></div>
+                  <div class="is-total"><dt>Total bayar</dt><dd>Rp 16.000</dd></div>
+                </dl>
+              </div>
+              <div class="pick pick-pubg-325">
+                <div class="order-game game-pubg">
+                  <span class="order-icon"><i class="bi bi-crosshair" aria-hidden="true"></i></span>
+                  <div><strong>PUBG Mobile</strong><small>325 UC</small></div>
+                </div>
+                <dl class="order-lines">
+                  <div><dt>Harga</dt><dd>Rp 75.000</dd></div>
+                  <div><dt>Biaya layanan</dt><dd>Rp 1.000</dd></div>
+                  <div class="is-total"><dt>Total bayar</dt><dd>Rp 76.000</dd></div>
+                </dl>
+              </div>
+              <div class="pick pick-pubg-660">
+                <div class="order-game game-pubg">
+                  <span class="order-icon"><i class="bi bi-crosshair" aria-hidden="true"></i></span>
+                  <div><strong>PUBG Mobile</strong><small>660 UC</small></div>
+                </div>
+                <dl class="order-lines">
+                  <div><dt>Harga</dt><dd>Rp 150.000</dd></div>
+                  <div><dt>Biaya layanan</dt><dd>Rp 1.000</dd></div>
+                  <div class="is-total"><dt>Total bayar</dt><dd>Rp 151.000</dd></div>
+                </dl>
+              </div>
+              <div class="pick pick-roblox-80">
+                <div class="order-game game-roblox">
+                  <span class="order-icon"><i class="bi bi-bricks" aria-hidden="true"></i></span>
+                  <div><strong>Roblox</strong><small>80 Robux</small></div>
+                </div>
+                <dl class="order-lines">
+                  <div><dt>Harga</dt><dd>Rp 16.000</dd></div>
+                  <div><dt>Biaya layanan</dt><dd>Rp 1.000</dd></div>
+                  <div class="is-total"><dt>Total bayar</dt><dd>Rp 17.000</dd></div>
+                </dl>
+              </div>
+              <div class="pick pick-roblox-400">
+                <div class="order-game game-roblox">
+                  <span class="order-icon"><i class="bi bi-bricks" aria-hidden="true"></i></span>
+                  <div><strong>Roblox</strong><small>400 Robux</small></div>
+                </div>
+                <dl class="order-lines">
+                  <div><dt>Harga</dt><dd>Rp 79.000</dd></div>
+                  <div><dt>Biaya layanan</dt><dd>Rp 1.000</dd></div>
+                  <div class="is-total"><dt>Total bayar</dt><dd>Rp 80.000</dd></div>
+                </dl>
+              </div>
+              <div class="pick pick-roblox-800">
+                <div class="order-game game-roblox">
+                  <span class="order-icon"><i class="bi bi-bricks" aria-hidden="true"></i></span>
+                  <div><strong>Roblox</strong><small>800 Robux</small></div>
+                </div>
+                <dl class="order-lines">
+                  <div><dt>Harga</dt><dd>Rp 155.000</dd></div>
+                  <div><dt>Biaya layanan</dt><dd>Rp 1.000</dd></div>
+                  <div class="is-total"><dt>Total bayar</dt><dd>Rp 156.000</dd></div>
+                </dl>
+              </div>
+              <div class="pick-default">
+                <p class="empty-note">Belum ada pesanan. Pilih game dan paket dulu, lalu isi data akunmu.</p>
+                <a class="btn-kg-sun btn-kg-sm" href="katalog.html">Buka katalog</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

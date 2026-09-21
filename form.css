@@ -65,3 +65,53 @@
 .form-control:not(:placeholder-shown):valid   { border-color: var(--kg-mint); }
 .form-check-input { border: 2px solid var(--kg-ink); }
 .form-check-input:checked { background-color: var(--kg-cobalt); border-color: var(--kg-ink); }
+
+.flow-anchor:target ~ .row .pick-default { display: none; }
+
+.stepper li:first-child::before { display: none; }
+
+.stepper .dot {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  background: #fff;
+  color: var(--kg-ink);
+  border: var(--kg-line);
+  border-radius: 50%;
+  font-family: var(--kg-font-head);
+  font-weight: 800;
+}
+.stepper .is-done .dot   { background: var(--kg-mint); color: #fff; }
+.stepper .is-active .dot { background: var(--kg-sun); }
+.stepper .is-active { color: var(--kg-ink); }
+.stepper .is-done::before,
+.stepper .is-active::before { background: var(--kg-ink); }
+
+.pay-grid { display: grid; gap: 0.75rem; }
+
+.pay-option {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.85rem 1rem;
+  background: #fff;
+  border: var(--kg-line);
+  border-radius: 12px;
+  cursor: pointer;
+}
+.pay-option i { font-size: 1.5rem; }
+.pay-option strong { display: block; line-height: 1.2; }
+.pay-option small { color: var(--kg-muted); }
+
+.btn-check:checked + .pay-option {
+  background: var(--kg-sun);
+  box-shadow: var(--kg-shadow);
+}
+.btn-check:checked + .pay-option small { color: var(--kg-ink); }
+.btn-check:focus-visible + .pay-option {
+  outline: 3px solid var(--kg-cobalt);
+  outline-offset: 3px;
+}

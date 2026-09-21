@@ -19,6 +19,167 @@
   <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
+ <a class="skip-link" href="#konten">Lewati ke konten</a>
+
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg kg-navbar" aria-label="Navigasi utama">
+      <div class="container">
+        <a class="kg-brand" href="index.html">
+          <span class="kg-brand-mark"><i class="bi bi-controller" aria-hidden="true"></i></span>EYA Store
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menuUtama" aria-controls="menuUtama"
+                aria-expanded="false" aria-label="Buka menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuUtama">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1 mt-3 mt-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link active" href="katalog.html" aria-current="page">Katalog</a></li>
+            <li class="nav-item"><a class="nav-link" href="cara-topup.html">Cara Top Up</a></li>
+            <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+          </ul>
+          <a class="btn-kg btn-kg-sm mt-3 mt-lg-0" href="katalog.html">Top up sekarang</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="konten">
+    <div class="container page-head">
+      <nav aria-label="Breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Katalog</li>
+        </ol>
+      </nav>
+      <h1>Katalog top up</h1>
+      <p class="text-muted mb-0">Pilih game, lalu pilih satu dari tiga paket yang tersedia.</p>
+    </div>
+
+    <section class="section" aria-labelledby="judul-game">
+      <div class="container">
+        <h2 class="visually-hidden" id="judul-game">Daftar game</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <a class="game-tile game-mlbb" href="detail-mlbb.html">
+              <div class="game-tile-cover"><i class="bi bi-gem" aria-hidden="true"></i></div>
+              <div class="game-tile-body">
+                <h3>Mobile Legends</h3>
+                <p>Diamond untuk skin, hero, dan Starlight Pass.</p>
+                <p class="tile-price">Mulai Rp 21.000</p>
+                <span class="tile-cta">Pilih paket Diamond</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="game-tile game-pubg" href="detail-pubg.html">
+              <div class="game-tile-cover"><i class="bi bi-crosshair" aria-hidden="true"></i></div>
+              <div class="game-tile-body">
+                <h3>PUBG Mobile</h3>
+                <p>UC untuk Royale Pass, outfit, dan senjata.</p>
+                <p class="tile-price">Mulai Rp 15.000</p>
+                <span class="tile-cta">Pilih paket UC</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="game-tile game-roblox" href="detail-roblox.html">
+              <div class="game-tile-cover"><i class="bi bi-bricks" aria-hidden="true"></i></div>
+              <div class="game-tile-body">
+                <h3>Roblox</h3>
+                <p>Robux untuk item avatar, game pass, dan gear.</p>
+                <p class="tile-price">Mulai Rp 16.000</p>
+                <span class="tile-cta">Pilih paket Robux</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-band" aria-labelledby="judul-tabel">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="judul-tabel">Semua paket dalam satu tabel</h2>
+          <p>Mau langsung beli? Tekan tombol pilih di baris paket yang kamu inginkan.</p>
+        </div>
+        <div class="table-wrap table-responsive">
+          <table class="table table-kg">
+            <caption class="visually-hidden">Daftar paket top up semua game</caption>
+            <thead>
+              <tr><th scope="col">Game</th><th scope="col">Paket</th><th scope="col">Harga</th><th scope="col">Label</th><th scope="col"><span class="visually-hidden">Aksi</span></th></tr>
+            </thead>
+            <tbody>
+            <tr>
+              <th scope="row" rowspan="3">Mobile Legends</th>
+              <td>86 Diamond</td>
+              <td>Rp 21.000</td>
+              <td></td>
+              <td class="text-end"><a class="btn-kg btn-kg-sm" href="form-mlbb.html#mlbb-86">Pilih</a></td>
+            </tr>
+            <tr>
+          
+              <td>172 Diamond</td>
+              <td>Rp 42.000</td>
+              <td><span class="chip">Paling laris</span></td>
+              <td class="text-end"><a class="btn-kg btn-kg-sm" href="form-mlbb.html#mlbb-172">Pilih</a></td>
+            </tr>
+            <tr>
+          
+              <td>344 Diamond</td>
+              <td>Rp 84.000</td>
+              <td><span class="chip">Paket besar</span></td>
+              <td class="text-end"><a class="btn-kg btn-kg-sm" href="form-mlbb.html#mlbb-344">Pilih</a></td>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="3">PUBG Mobile</th>
+              <td>60 UC</td>
+              <td>Rp 15.000</td>
+              <td></td>
+              <td class="text-end"><a class="btn-kg btn-kg-sm" href="form-pubg.html#pubg-60">Pilih</a></td>
+            </tr>
+            <tr>
+          
+              <td>325 UC</td>
+              <td>Rp 75.000</td>
+              <td><span class="chip">Paling laris</span></td>
+              <td class="text-end"><a class="btn-kg btn-kg-sm" href="form-pubg.html#pubg-325">Pilih</a></td>
+            </tr>
+            <tr>
+          
+              <td>660 UC</td>
+              <td>Rp 150.000</td>
+              <td><span class="chip">Paket besar</span></td>
+              <td class="text-end"><a class="btn-kg btn-kg-sm" href="form-pubg.html#pubg-660">Pilih</a></td>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="3">Roblox</th>
+              <td>80 Robux</td>
+              <td>Rp 16.000</td>
+              <td></td>
+              <td class="text-end"><a class="btn-kg btn-kg-sm" href="form-roblox.html#roblox-80">Pilih</a></td>
+            </tr>
+            <tr>
+          
+              <td>400 Robux</td>
+              <td>Rp 79.000</td>
+              <td><span class="chip">Paling laris</span></td>
+              <td class="text-end"><a class="btn-kg btn-kg-sm" href="form-roblox.html#roblox-400">Pilih</a></td>
+            </tr>
+            <tr>
+          
+              <td>800 Robux</td>
+              <td>Rp 155.000</td>
+              <td><span class="chip">Paket besar</span></td>
+              <td class="text-end"><a class="btn-kg btn-kg-sm" href="form-roblox.html#roblox-800">Pilih</a></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
     
 </body>
 </html>

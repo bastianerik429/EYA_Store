@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Isi Data Roblox | EYA Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+  <main id="konten">
+    <div class="container py-4 py-lg-5">
+      <div class="flow">
+        <span id="roblox-80" class="flow-anchor"></span>
+        <span id="roblox-400" class="flow-anchor"></span>
+        <span id="roblox-800" class="flow-anchor"></span>
+
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="katalog.html">Katalog</a></li>
+            <li class="breadcrumb-item"><a href="detail-roblox.html">Roblox</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Isi data</li>
+          </ol>
+        </nav>
+        <ol class="stepper" aria-label="Tahapan top up">
+          <li class="is-done"><span class="dot"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span class="lbl">Pilih paket</span></li>
+          <li class="is-active" aria-current="step"><span class="dot">2</span><span class="lbl">Isi data</span></li>
+          <li class=""><span class="dot">3</span><span class="lbl">Bayar</span></li>
+          <li class=""><span class="dot">4</span><span class="lbl">Selesai</span></li>
+        </ol>
+        <h1 class="h2 mb-4">Isi data akun Roblox</h1>
+
+        <div class="row g-4">
+          <div class="col-lg-7 order-2 order-lg-1">
+            <!-- method="get": data dikirim lewat URL, cocok untuk situs statis tanpa server -->
+            <form class="form-card" id="form-topup" action="pembayaran.html" method="get">
+              <input type="hidden" name="game" value="roblox">
+
+              <fieldset>
+                <legend>Data akun game</legend>
+                <div class="row g-3">
+                      <div class="col-12">
+                        <label class="form-label" for="username">Username Roblox</label>
+                        <input class="form-control" type="text" id="username" name="username" placeholder="kucing_pixel"
+                               inputmode="text" pattern="[A-Za-z0-9_]{3,20}" autocomplete="off" required>
+                        <div class="form-text">3–20 karakter: huruf, angka, atau garis bawah</div>
+                      </div>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Kontak untuk bukti pesanan</legend>
+                <div class="row g-3">
+                  <div class="col-12">
+                    <label class="form-label" for="email">Email</label>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="nama@email.com" autocomplete="email" required>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="wa">Nomor WhatsApp</label>
+                    <input class="form-control" type="tel" id="wa" name="wa" placeholder="081234567890"
+                           inputmode="tel" pattern="08[0-9]{8,12}" autocomplete="tel" required>
+                    <div class="form-text">Diawali 08, contoh: 081234567890</div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox" id="setuju" name="setuju" required>
+                <label class="form-check-label" for="setuju">Saya sudah memeriksa bahwa data akun di atas benar.</label>
+              </div>
+
+                  <div class="pick pick-roblox-80">
+                    <button class="btn-kg w-100" type="submit" formaction="pembayaran.html#roblox-80">Lanjut ke pembayaran</button>
+                  </div>
+                  <div class="pick pick-roblox-400">
+                    <button class="btn-kg w-100" type="submit" formaction="pembayaran.html#roblox-400">Lanjut ke pembayaran</button>
+                  </div>
+                  <div class="pick pick-roblox-800">
+                    <button class="btn-kg w-100" type="submit" formaction="pembayaran.html#roblox-800">Lanjut ke pembayaran</button>
+                  </div>
+              <div class="pick-default">
+                <button class="btn-kg w-100" type="button" disabled>Pilih paket dulu</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-lg-5 order-1 order-lg-2">
+            <aside class="order-card is-sticky" aria-label="Ringkasan pesanan">
+              <h2>Ringkasan pesanan</h2>
+              <div class="pick pick-roblox-80">
+                <div class="order-game game-roblox">
+                  <span class="order-icon"><i class="bi bi-bricks" aria-hidden="true"></i></span>
+                  <div><strong>Roblox</strong><small>80 Robux</small></div>
+                </div>
+                <dl class="order-lines">
+                  <div><dt>Paket</dt><dd>80 Robux</dd></div>
+                  <div class="is-total"><dt>Harga</dt><dd>Rp 16.000</dd></div>
+                </dl>
+                <a class="d-inline-block mt-2 small" href="detail-roblox.html">Ganti paket</a>
+              </div>
+              <div class="pick pick-roblox-400">
+                <div class="order-game game-roblox">
+                  <span class="order-icon"><i class="bi bi-bricks" aria-hidden="true"></i></span>
+                  <div><strong>Roblox</strong><small>400 Robux</small></div>
+                </div>
+                <dl class="order-lines">
+                  <div><dt>Paket</dt><dd>400 Robux</dd></div>
+                  <div class="is-total"><dt>Harga</dt><dd>Rp 79.000</dd></div>
+                </dl>
+                <a class="d-inline-block mt-2 small" href="detail-roblox.html">Ganti paket</a>
+              </div>
+              <div class="pick pick-roblox-800">
+                <div class="order-game game-roblox">
+                  <span class="order-icon"><i class="bi bi-bricks" aria-hidden="true"></i></span>
+                  <div><strong>Roblox</strong><small>800 Robux</small></div>
+                </div>
+                <dl class="order-lines">
+                  <div><dt>Paket</dt><dd>800 Robux</dd></div>
+                  <div class="is-total"><dt>Harga</dt><dd>Rp 155.000</dd></div>
+                </dl>
+                <a class="d-inline-block mt-2 small" href="detail-roblox.html">Ganti paket</a>
+              </div>
+              <div class="pick-default">
+                <p class="empty-note">Kamu belum memilih paket. Pilih satu dari tiga paket Robux dulu.</p>
+                <a class="btn-kg-sun btn-kg-sm" href="detail-roblox.html">Pilih paket</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

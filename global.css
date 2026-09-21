@@ -1,0 +1,30 @@
+:root {
+    --kg-paper: #f4f7fe;        /* latar halaman */
+    --kg-card: #ffffff;         /* latar kartu */
+    --kg-ink: #12162b;          /* teks & garis tepi */
+    --kg-muted: #565d7a;        /* teks sekunder */
+    --kg-cobalt: #2a4bff;       /* aksi utama */
+    --kg-cobalt-dark: #1b34c7;
+    --kg-sun: #ffd23f;          /* kuning konter */
+    --kg-coral: #ff5a4e;        /* peringatan/error */
+    --kg-mint: #12b886;         /* sukses */
+
+     /* Bentuk */
+  --kg-line: 2px solid var(--kg-ink);
+  --kg-radius: 14px;
+  --kg-shadow: 4px 4px 0 var(--kg-ink);
+
+  /* Tipografi */
+  --kg-font-head: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --kg-font-body: "Plus Jakarta Sans", "Segoe UI", system-ui, sans-serif;
+
+  /* Menimpa variabel bawaan Bootstrap agar warna & font mengikuti tema kita */
+  --bs-body-bg: var(--kg-paper);
+  --bs-body-color: var(--kg-ink);
+  --bs-body-font-family: var(--kg-font-body);
+  --bs-heading-color: var(--kg-ink);
+  --bs-secondary-color: var(--kg-muted);
+  --bs-link-color: var(--kg-cobalt);
+  --bs-link-hover-color: var(--kg-cobalt-dark);
+  --bs-border-color: var(--kg-ink);
+}

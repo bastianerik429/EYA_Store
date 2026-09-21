@@ -115,3 +115,45 @@
   outline: 3px solid var(--kg-cobalt);
   outline-offset: 3px;
 }
+
+.order-card h2 { margin-bottom: 1rem; font-size: 1.25rem; }
+
+.order-game {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: var(--game-soft);
+  border: var(--kg-line);
+  border-radius: 12px;
+}
+.order-icon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  background: var(--game);
+  color: var(--game-on);
+  border: var(--kg-line);
+  border-radius: 10px;
+  font-size: 1.35rem;
+}
+.order-game strong { display: block; line-height: 1.2; }
+.order-game small { color: var(--kg-muted); }
+
+.order-lines { margin: 1rem 0 0; }
+.order-lines > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed rgba(18, 22, 43, 0.3);
+}
+.order-lines > div:last-child { border-bottom: 0; }
+.order-lines dt { font-weight: 500; color: var(--kg-muted); }
+.order-lines dd { margin: 0; font-weight: 700; text-align: right; }
+.order-lines .is-total dd { font-family: var(--kg-font-head); font-size: 1.25rem; }
+
+.empty-note { margin: 0 0 1rem; color: var(--kg-muted); }

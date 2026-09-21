@@ -6,7 +6,10 @@
 
 #mlbb-86:target ~ .row .pick-mlbb-86,
 #mlbb-172:target ~ .row .pick-mlbb-172,
-#mlbb-344:target ~ .row .pick-mlbb-344
+#mlbb-344:target ~ .row .pick-mlbb-344,
+#pubg-60:target ~ .row .pick-pubg-60,
+#pubg-325:target ~ .row .pick-pubg-325,
+#pubg-660:target ~ .row .pick-pubg-660
 { display: block;}
 
 .stepper {

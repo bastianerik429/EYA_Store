@@ -25,3 +25,43 @@
   height: 2px;
   background: #b9bfd9;
 }
+
+.form-card,
+.order-card {
+  padding: 1.25rem;
+  background: #fff;
+  border: var(--kg-line);
+  border-radius: var(--kg-radius);
+}
+
+.form-card fieldset { margin-bottom: 1.5rem; }
+.form-card legend {
+  float: none;
+  width: auto;
+  padding: 0;
+  margin-bottom: 1rem;
+  font-family: var(--kg-font-head);
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.form-label { font-weight: 700; }
+.form-text { color: var(--kg-muted); }
+
+.form-control,
+.form-select {
+  padding: 0.7rem 0.9rem;
+  background-color: #fff;
+  border: 2px solid var(--kg-ink);
+  border-radius: 12px;
+}
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--kg-cobalt);
+  box-shadow: 0 0 0 4px rgba(42, 75, 255, 0.25);
+}
+
+.form-control:not(:placeholder-shown):invalid { border-color: var(--kg-coral); background-color: #fff5f4; }
+.form-control:not(:placeholder-shown):valid   { border-color: var(--kg-mint); }
+.form-check-input { border: 2px solid var(--kg-ink); }
+.form-check-input:checked { background-color: var(--kg-cobalt); border-color: var(--kg-ink); }

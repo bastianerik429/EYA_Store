@@ -28,3 +28,17 @@
   --bs-link-hover-color: var(--kg-cobalt-dark);
   --bs-border-color: var(--kg-ink);
 }
+/* ---------- 2. Gaya dasar ---------- */
+body {
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--kg-font-head);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.12;
+}
+
+a { text-underline-offset: 3px; }

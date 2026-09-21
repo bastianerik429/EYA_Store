@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Isi Data PUBG Mobile | EYA Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+  <main id="konten">
+    <div class="container py-4 py-lg-5">
+      <div class="flow">
+        <span id="pubg-60" class="flow-anchor"></span>
+        <span id="pubg-325" class="flow-anchor"></span>
+        <span id="pubg-660" class="flow-anchor"></span>
+
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="katalog.html">Katalog</a></li>
+            <li class="breadcrumb-item"><a href="detail-pubg.html">PUBG Mobile</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Isi data</li>
+          </ol>
+        </nav>
+        <ol class="stepper" aria-label="Tahapan top up">
+          <li class="is-done"><span class="dot"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span class="lbl">Pilih paket</span></li>
+          <li class="is-active" aria-current="step"><span class="dot">2</span><span class="lbl">Isi data</span></li>
+          <li class=""><span class="dot">3</span><span class="lbl">Bayar</span></li>
+          <li class=""><span class="dot">4</span><span class="lbl">Selesai</span></li>
+        </ol>
+        <h1 class="h2 mb-4">Isi data akun PUBG Mobile</h1>
+
+        <div class="row g-4">
+          <div class="col-lg-7 order-2 order-lg-1">
+            <!-- method="get": data dikirim lewat URL, cocok untuk situs statis tanpa server -->
+            <form class="form-card" id="form-topup" action="pembayaran.html" method="get">
+              <input type="hidden" name="game" value="pubg">
+
+              <fieldset>
+                <legend>Data akun game</legend>
+                <div class="row g-3">
+                      <div class="col-12">
+                        <label class="form-label" for="player_id">ID Karakter</label>
+                        <input class="form-control" type="text" id="player_id" name="player_id" placeholder="5123456789"
+                               inputmode="numeric" pattern="[0-9]{8,12}" autocomplete="off" required>
+                        <div class="form-text">Angka 8–12 digit</div>
+                      </div>
+                      <div class="col-12">
+                        <label class="form-label" for="nickname">Nickname (opsional)</label>
+                        <input class="form-control" type="text" id="nickname" name="nickname" placeholder="NamaKarakter"
+                               inputmode="text" pattern="[A-Za-z0-9_ ]{2,20}" autocomplete="off">
+                        <div class="form-text">Membantu kami memastikan akun yang dituju</div>
+                      </div>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Kontak untuk bukti pesanan</legend>
+                <div class="row g-3">
+                  <div class="col-12">
+                    <label class="form-label" for="email">Email</label>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="nama@email.com" autocomplete="email" required>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="wa">Nomor WhatsApp</label>
+                    <input class="form-control" type="tel" id="wa" name="wa" placeholder="081234567890"
+                           inputmode="tel" pattern="08[0-9]{8,12}" autocomplete="tel" required>
+                    <div class="form-text">Diawali 08, contoh: 081234567890</div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox" id="setuju" name="setuju" required>
+                <label class="form-check-label" for="setuju">Saya sudah memeriksa bahwa data akun di atas benar.</label>
+              </div>
+
+                  <div class="pick pick-pubg-60">
+                    <button class="btn-kg w-100" type="submit" formaction="pembayaran.html#pubg-60">Lanjut ke pembayaran</button>
+                  </div>
+                  <div class="pick pick-pubg-325">
+                    <button class="btn-kg w-100" type="submit" formaction="pembayaran.html#pubg-325">Lanjut ke pembayaran</button>
+                  </div>
+                  <div class="pick pick-pubg-660">
+                    <button class="btn-kg w-100" type="submit" formaction="pembayaran.html#pubg-660">Lanjut ke pembayaran</button>
+                  </div>
+              <div class="pick-default">
+                <button class="btn-kg w-100" type="button" disabled>Pilih paket dulu</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-lg-5 order-1 order-lg-2">
+            <aside class="order-card is-sticky" aria-label="Ringkasan pesanan">
+              <h2>Ringkasan pesanan</h2>
+              <div class="pick pick-pubg-60">
+                <div class="order-game game-pubg">
+                  <span class="order-icon"><i class="bi bi-crosshair" aria-hidden="true"></i></span>
+                  <div><strong>PUBG Mobile</strong><small>60 UC</small></div>
+                </div>
+                <dl class="order-lines">
+                  <div><dt>Paket</dt><dd>60 UC</dd></div>
+                  <div class="is-total"><dt>Harga</dt><dd>Rp 15.000</dd></div>
+                </dl>
+                <a class="d-inline-block mt-2 small" href="detail-pubg.html">Ganti paket</a>
+              </div>
+              <div class="pick pick-pubg-325">
+                <div class="order-game game-pubg">
+                  <span class="order-icon"><i class="bi bi-crosshair" aria-hidden="true"></i></span>
+                  <div><strong>PUBG Mobile</strong><small>325 UC</small></div>
+                </div>
+                <dl class="order-lines">
+                  <div><dt>Paket</dt><dd>325 UC</dd></div>
+                  <div class="is-total"><dt>Harga</dt><dd>Rp 75.000</dd></div>
+                </dl>
+                <a class="d-inline-block mt-2 small" href="detail-pubg.html">Ganti paket</a>
+              </div>
+              <div class="pick pick-pubg-660">
+                <div class="order-game game-pubg">
+                  <span class="order-icon"><i class="bi bi-crosshair" aria-hidden="true"></i></span>
+                  <div><strong>PUBG Mobile</strong><small>660 UC</small></div>
+                </div>
+                <dl class="order-lines">
+                  <div><dt>Paket</dt><dd>660 UC</dd></div>
+                  <div class="is-total"><dt>Harga</dt><dd>Rp 150.000</dd></div>
+                </dl>
+                <a class="d-inline-block mt-2 small" href="detail-pubg.html">Ganti paket</a>
+              </div>
+              <div class="pick-default">
+                <p class="empty-note">Kamu belum memilih paket. Pilih satu dari tiga paket UC dulu.</p>
+                <a class="btn-kg-sun btn-kg-sm" href="detail-pubg.html">Pilih paket</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

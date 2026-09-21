@@ -43,6 +43,60 @@ h1, h2, h3, h4, h5, h6 {
 
 a { text-underline-offset: 3px; }
 
+/* ---------- 3. Tombol ---------- */
+.btn-kg,
+.btn-kg-sun,
+.btn-kg-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.3rem;
+  border: var(--kg-line);
+  border-radius: 12px;
+  box-shadow: var(--kg-shadow);
+  font-family: var(--kg-font-head);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.2;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.btn-kg      { background: var(--kg-cobalt); color: #fff; }
+.btn-kg-sun  { background: var(--kg-sun);    color: var(--kg-ink); }
+.btn-kg-ghost{ background: #fff;             color: var(--kg-ink); }
+
+.btn-kg:hover,
+.btn-kg-sun:hover,
+.btn-kg-ghost:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--kg-ink);
+}
+.btn-kg:hover { color: #fff; }
+.btn-kg-sun:hover,
+.btn-kg-ghost:hover { color: var(--kg-ink); }
+
+.btn-kg:active,
+.btn-kg-sun:active,
+.btn-kg-ghost:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0 0 0 var(--kg-ink);
+}
+
+.btn-kg:disabled,
+.btn-kg[disabled] {
+  background: #d9dcec;
+  color: #6f7590;
+  border-color: #9aa0bb;
+  box-shadow: none;
+  transform: none;
+  cursor: not-allowed;
+}
+
+.btn-kg-sm { padding: 0.45rem 1rem; font-size: 0.9rem; box-shadow: 3px 3px 0 var(--kg-ink); }
+
 /* ---------- 4. Header / Navbar ---------- */
 .kg-navbar {
   background: #fff;

@@ -42,3 +42,79 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a { text-underline-offset: 3px; }
+
+/* ---------- 4. Header / Navbar ---------- */
+.kg-navbar {
+  background: #fff;
+  border-bottom: var(--kg-line);
+  padding-block: 0.6rem;
+}
+
+.kg-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--kg-font-head);
+  font-weight: 800;
+  font-size: 1.4rem;
+  letter-spacing: -0.02em;
+  color: var(--kg-ink);
+  text-decoration: none;
+}
+.kg-brand:hover { color: var(--kg-ink); }
+
+.kg-brand-mark {
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  background: var(--kg-sun);
+  border: var(--kg-line);
+  border-radius: 10px;
+  box-shadow: 2px 2px 0 var(--kg-ink);
+  font-size: 1.15rem;
+}
+
+.kg-navbar .navbar-toggler {
+  border: var(--kg-line);
+  border-radius: 10px;
+}
+
+.kg-navbar .nav-link {
+  padding: 0.45rem 0.95rem;
+  border-radius: 999px;
+  font-weight: 600;
+  color: var(--kg-ink);
+}
+.kg-navbar .nav-link:hover { background: #eaeeff; }
+.kg-navbar .nav-link.active {
+  background: var(--kg-sun);
+  color: var(--kg-ink);
+}
+
+/* ---------- 5. Footer ---------- */
+.kg-footer {
+  margin-top: 2rem;
+  padding: 3rem 0 1.5rem;
+  background: var(--kg-ink);
+  color: #c9cee6;
+  border-top: var(--kg-line);
+}
+.kg-footer h2 { margin-bottom: 0.75rem; font-size: 1rem; color: #fff; }
+.kg-footer a { color: #c9cee6; text-decoration: none; }
+.kg-footer a:hover { color: var(--kg-sun); text-decoration: underline; }
+.kg-footer li + li { margin-top: 0.4rem; }
+.kg-footer :focus-visible { outline-color: var(--kg-sun); }
+.kg-footer .kg-brand { color: #fff; }
+.kg-footer .kg-brand-mark { color: var(--kg-ink); }
+.kg-copy {
+  margin: 2rem 0 0;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 0.875rem;
+}
+
+/* ---------- 6. Hormati preferensi "kurangi animasi" ---------- */
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}

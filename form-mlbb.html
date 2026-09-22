@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Isi Data Mobile Legends | EYA Store</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="form.css">
-    <link rel="stylesheet" href="responsive.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Isi data akun Mobile Legends untuk melanjutkan top up di EYA Store.">
+  <title>Isi Data Mobile Legends | EYA Store</title>
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="form.css">
+  <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
-<main id="konten">
+
+  <main id="konten">
     <div class="container py-4 py-lg-5">
       <div class="flow">
         <span id="mlbb-86" class="flow-anchor"></span>
         <span id="mlbb-172" class="flow-anchor"></span>
         <span id="mlbb-344" class="flow-anchor"></span>
+
         <nav aria-label="Breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="katalog.html">Katalog</a></li>
@@ -31,10 +36,13 @@
           <li class=""><span class="dot">3</span><span class="lbl">Bayar</span></li>
           <li class=""><span class="dot">4</span><span class="lbl">Selesai</span></li>
         </ol>
+        <h1 class="h2 mb-4">Isi data akun Mobile Legends</h1>
+
         <div class="row g-4">
           <div class="col-lg-7 order-2 order-lg-1">
             <form class="form-card" id="form-topup" action="pembayaran.html" method="get">
               <input type="hidden" name="game" value="mlbb">
+
               <fieldset>
                 <legend>Data akun game</legend>
                 <div class="row g-3">
@@ -52,6 +60,7 @@
                       </div>
                 </div>
               </fieldset>
+
               <fieldset>
                 <legend>Kontak untuk bukti pesanan</legend>
                 <div class="row g-3">
@@ -67,24 +76,27 @@
                   </div>
                 </div>
               </fieldset>
+
               <div class="form-check mb-4">
                 <input class="form-check-input" type="checkbox" id="setuju" name="setuju" required>
                 <label class="form-check-label" for="setuju">Saya sudah memeriksa bahwa data akun di atas benar.</label>
               </div>
+
                   <div class="pick pick-mlbb-86">
-                    <button class="btn-kg w-100" type="submit" formaction="pembayaran.html">Lanjut ke pembayaran</button>
+                    <button class="btn-kg w-100" type="submit" formaction="pembayaran.html#mlbb-86">Lanjut ke pembayaran</button>
                   </div>
                   <div class="pick pick-mlbb-172">
-                    <button class="btn-kg w-100" type="submit" formaction="pembayaran.html">Lanjut ke pembayaran</button>
+                    <button class="btn-kg w-100" type="submit" formaction="pembayaran.html#mlbb-172">Lanjut ke pembayaran</button>
                   </div>
                   <div class="pick pick-mlbb-344">
-                    <button class="btn-kg w-100" type="submit" formaction="pembayaran.html">Lanjut ke pembayaran</button>
+                    <button class="btn-kg w-100" type="submit" formaction="pembayaran.html#mlbb-344">Lanjut ke pembayaran</button>
                   </div>
               <div class="pick-default">
                 <button class="btn-kg w-100" type="button" disabled>Pilih paket dulu</button>
               </div>
             </form>
           </div>
+
           <div class="col-lg-5 order-1 order-lg-2">
             <aside class="order-card is-sticky" aria-label="Ringkasan pesanan">
               <h2>Ringkasan pesanan</h2>
@@ -93,7 +105,7 @@
                   <span class="order-icon"><i class="bi bi-gem" aria-hidden="true"></i></span>
                   <div><strong>Mobile Legends</strong><small>86 Diamond</small></div>
                 </div>
-               <dl class="order-lines">
+                <dl class="order-lines">
                   <div><dt>Paket</dt><dd>86 Diamond</dd></div>
                   <div class="is-total"><dt>Harga</dt><dd>Rp 21.000</dd></div>
                 </dl>
@@ -130,7 +142,7 @@
         </div>
       </div>
     </div>
-  </main>                         
-</main>
+  </main>
+
 </body>
 </html>

@@ -4,6 +4,8 @@
   scroll-margin-top: 5.5rem;
 }
 
+.pick { display: none; }
+
 #mlbb-86:target ~ .row .pick-mlbb-86,
 #mlbb-172:target ~ .row .pick-mlbb-172,
 #mlbb-344:target ~ .row .pick-mlbb-344,
@@ -13,13 +15,28 @@
 #roblox-80:target ~ .row .pick-roblox-80,
 #roblox-400:target ~ .row .pick-roblox-400,
 #roblox-800:target ~ .row .pick-roblox-800
-{ display: block;}
+{ display: block; }
+
+.flow-anchor:target ~ .row .pick-default { display: none; }
 
 .stepper {
   display: flex;
   padding: 0;
   margin: 0 0 1.75rem;
   list-style: none;
+}
+
+.stepper li {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--kg-muted);
 }
 
 .stepper li::before {
@@ -31,6 +48,29 @@
   height: 2px;
   background: #b9bfd9;
 }
+
+.stepper li:first-child::before { display: none; }
+
+.stepper .dot {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  background: #fff;
+  color: var(--kg-ink);
+  border: var(--kg-line);
+  border-radius: 50%;
+  font-family: var(--kg-font-head);
+  font-weight: 800;
+}
+
+.stepper .is-done .dot   { background: var(--kg-mint); color: #fff; }
+.stepper .is-active .dot { background: var(--kg-sun); }
+.stepper .is-active { color: var(--kg-ink); }
+.stepper .is-done::before,
+.stepper .is-active::before { background: var(--kg-ink); }
 
 .form-card,
 .order-card {
@@ -71,30 +111,6 @@
 .form-control:not(:placeholder-shown):valid   { border-color: var(--kg-mint); }
 .form-check-input { border: 2px solid var(--kg-ink); }
 .form-check-input:checked { background-color: var(--kg-cobalt); border-color: var(--kg-ink); }
-
-.flow-anchor:target ~ .row .pick-default { display: none; }
-
-.stepper li:first-child::before { display: none; }
-
-.stepper .dot {
-  position: relative;
-  z-index: 1;
-  display: grid;
-  place-items: center;
-  width: 2.2rem;
-  height: 2.2rem;
-  background: #fff;
-  color: var(--kg-ink);
-  border: var(--kg-line);
-  border-radius: 50%;
-  font-family: var(--kg-font-head);
-  font-weight: 800;
-}
-.stepper .is-done .dot   { background: var(--kg-mint); color: #fff; }
-.stepper .is-active .dot { background: var(--kg-sun); }
-.stepper .is-active { color: var(--kg-ink); }
-.stepper .is-done::before,
-.stepper .is-active::before { background: var(--kg-ink); }
 
 .pay-grid { display: grid; gap: 0.75rem; }
 
@@ -163,3 +179,36 @@
 .order-lines .is-total dd { font-family: var(--kg-font-head); font-size: 1.25rem; }
 
 .empty-note { margin: 0 0 1rem; color: var(--kg-muted); }
+
+.success-head { margin-bottom: 1.5rem; text-align: center; }
+.success-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-bottom: 1rem;
+  background: var(--kg-mint);
+  color: #fff;
+  border: var(--kg-line);
+  border-radius: 50%;
+  box-shadow: var(--kg-shadow);
+  font-size: 2.4rem;
+}
+.success-head h1 { font-size: clamp(2rem, 6vw, 2.8rem); }
+
+.receipt { position: relative; padding-top: 3.5rem; }
+.stamp {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.15rem 0.8rem;
+  color: var(--kg-mint);
+  border: 3px solid var(--kg-mint);
+  border-radius: 10px;
+  font-family: var(--kg-font-head);
+  font-size: 1.1rem;
+  font-weight: 800;
+  transform: rotate(6deg);
+}
+
+.contact-list { display: grid; gap: 1.25rem; }
